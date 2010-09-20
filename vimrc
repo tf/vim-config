@@ -63,3 +63,12 @@ nmap <C-l> :bn<CR>
 
 runtime macros/matchit.vim
 
+" gui
+
+if has('gui_running')
+  set guioptions-=T
+  set guioptions-=r
+  set guioptions-=m
+  
+  colorscheme ir_black
+end
